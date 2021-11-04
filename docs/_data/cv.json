@@ -1,0 +1,108 @@
+{
+  "basics": {
+    "name": "Louis Cai",
+    "label": "",
+    "image": "",
+    "email": "louisxcai@outlook.com",
+    "phone": "(425) 236-8306",
+    "url": "blog.loolab.tech",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [{
+      "network": "GitHub",
+      "username": "loocool2",
+      "url": "https://github.com/loocool2"
+    }]
+  },
+  "work": [{
+    "name": "Company",
+    "position": "President",
+    "url": "https://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "Western Washington University",
+    "url": "https://wwu.edu/",
+    "area": "Computer Science",
+    "studyType": "B.S.",
+    "startDate": "September 2020",
+    "endDate": "Est. Grad June 2024",
+    "score": "",
+    "courses": [
+      ""
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "projects": [{
+    "name": "Project",
+    "description": "Description…",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "keywords": [
+      "HTML"
+    ],
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "url": "https://project.com/",
+    "roles": [
+      "Team Lead"
+    ],
+    "entity": "Entity",
+    "type": "application"
+  }]
+}
