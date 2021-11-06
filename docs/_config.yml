@@ -22,7 +22,6 @@ lang: en-US
 title: The loolab
 tagline: I write stuff here that might be useful later
 description: A blog dedicated to my adventures homelabbing and other things
-baseurl: /docs #baseurl:  # the subpath of your site, e.g. /blog
 url: blog.loolab.tech # the base hostname & protocol for your site, e.g. http://example.com
 author: loocool2
 social:
