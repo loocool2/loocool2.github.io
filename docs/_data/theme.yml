@@ -43,5 +43,5 @@ t:
   cv_work: "Work"
 
 navigation_pages:
-  - about.md
-  - cv.md
+  - cv.markdown
+  - about.markdown

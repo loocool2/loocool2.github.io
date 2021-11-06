@@ -1,18 +1,10 @@
 ---
-layout: page
-title: About
+layout: about
+title: About Me
 permalink: /about/
+author: loocool2
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm loo, currently in college studying Computer Science! I've always loved playing with computers as a kid and getting around my parent's virtual barriers, so here I am now.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I picked up homelabbing this summer, and it's led me down a long, fascinating rabbit hole. Right now I'm stumbling through everything and I'll try to chronicle my experiences down the hole!
