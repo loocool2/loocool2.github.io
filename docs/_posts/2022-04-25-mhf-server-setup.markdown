@@ -3,6 +3,7 @@ layout: post
 title:  "Setting Up a Monster Hunter Frontier Z Server on Linux"
 date:   2022-04-25
 categories: documentation
+description: Documenting how I set up MHFZ on Linux
 read_time: true
 ---
 
