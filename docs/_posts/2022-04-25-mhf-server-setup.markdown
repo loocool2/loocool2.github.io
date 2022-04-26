@@ -18,7 +18,7 @@ I noticed that there aren't any How-Tos on how to set up MHFZ on Linux. The inst
 
 While any distro should work just fine, I set up two Ubuntu 21.10 containers on my Proxmox server, one for running the server, and one for running the postgresql database. I named them `mhpostgres` and `mhfrontier` respectively, and I'll be calling them that throughout this guide.
 
-While this isn't strictly necessary, more seperation is always better in case one part gets screwed up, so I can simply nuke it and restore a backup. This guide will be seperated into two parts because of this.
+While this isn't strictly necessary, more separation is always better in case one part gets screwed up, so I can simply nuke it and restore a backup. This guide will be separated into two parts because of this.
 
 Make sure to put the server files somewhere where the containers can access them so you can copy it over. I put them on my NAS and mounted it to the containers. 
 
@@ -31,29 +31,29 @@ So far, I've noticed that neither the database or the game server do not require
 ## Steps:
 
 You can probably skip steps 2 and 3 if you're using Ubuntu, as Ubuntu includes postgres by default.
-1. Update and install all your local packages with `sudo apt update && sudo apt upgrade`
-2. Install the postgresql server with `sudo apt install postgresql`
-3. Make it start at every boot with `sudo systemctl start postgresql.service`
+1. Update and install all your local packages with `sudo apt update && sudo apt upgrade`.
+2. Install the postgresql server with `sudo apt install postgresql`.
+3. Make it start at every boot with `sudo systemctl start postgresql.service`.
 
 ### Setting up access control
 
-4. Go to `/etc/postgresql/<version>/main/postgresql.conf` and use your preferred text editor to edit it. As of writing the included version in Ubuntu is 12, but you can check with `postgres -V`
-5. Edit the commented out line that says `#listen_addresses = ‘localhost’` to say  `listen_addresses = '*'`
+4. Go to `/etc/postgresql/<version>/main/postgresql.conf` and use your preferred text editor to edit it. As of writing the included version in Ubuntu is 12, but you can check with `postgres -V`.
+5. Edit the commented out line that says `#listen_addresses = ‘localhost’` to say  `listen_addresses = '*'`.
 This is so that connections from anyone will be answered rather than connections only on the local machine.
 
 > If you'd like more security, you can change the listen_addresses whitelist to only the computers you're going to access it from. In other words, `mhfrontier` and whatever desktop you use to administer i.e. `listen_addresses = '192.168.0.2, 192.168.0.4'.
 
 6. Run `sudo -u postgres` to switch to the postgres user.
-7. Run `createdb erupe` to create the database
+7. Run `createdb erupe` to create the database.
 8. Run `psql` to access the postgres shell.
 9. To allow the `mhfrontier` server files to access the database, you need to change the password of the default user, postgres. Run `ALTER USER postgres with encrypted password 'your_password';` with the password you want. This is case sensitive.
 
 ### Restoring the database
 
-9. Copy the `Erupe-Backup.sql` file to inside the container using your favorite method of file transfer e.g. cp or scp.
-10. Now restore the database with the command `pg_restore -d erupe Erupe-Backup.sql`. Make sure you execute it from the same place the file is located or with the file path location.
+10. Copy the `Erupe-Backup.sql` file to inside the container using your favorite method of file transfer e.g. cp or scp.
+11. Now restore the database with the command `pg_restore -d erupe Erupe-Backup.sql`. Make sure you execute it from the same place the file is located or with the file path location.
 
-10a. If you would like to, you can restore “Road Shop Items.csv” as well. I couldn't figure out how through CLI, so I did it through pgAdmin4.
+11a. If you would like to, you can restore “Road Shop Items.csv” as well. I couldn't figure out how through CLI, so I did it through pgAdmin4.
 
 # Part 2: Setting up the MHFrontier Z Server
 
