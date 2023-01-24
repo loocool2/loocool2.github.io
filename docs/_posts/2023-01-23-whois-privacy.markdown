@@ -17,4 +17,4 @@ You might check public whois repositories and see that it's all fine, but in my 
 
 #The solution
 
-The solution is to move to a completely different domain registrar that actually does anonymize your whois correctly, or register with a burner email. Cloudflare has one of the better domain management systems anyway. If you're stuck with a domain registrar because they have a policy of not allowing domain transfers for the first couple months or some such, you may want to keep that domain inactive.
+The solution is to move to a completely different domain registrar that actually does anonymize your whois correctly, or register with a burner email. Cloudflare has one of the better domain management systems and conceals whois information well. If you're stuck with a domain registrar because they have a policy of not allowing domain transfers for the first couple months or some such, you may want to keep that domain inactive.
